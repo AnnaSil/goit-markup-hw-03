@@ -14,12 +14,48 @@ body {
     --address-color:rgba(255, 255, 255, 0.6);
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
 }
 
 .link {
     text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header>.container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
 }
 
 .header-logo {
@@ -29,6 +65,7 @@ body {
     letter-spacing: 0.03em;
     color: #000000;
     font-family: "Raleway";
+    margin-right: 93px;
 }
 
 .header-blue-logo {
@@ -38,6 +75,11 @@ body {
     letter-spacing: 0.03em;
     color: var(--blue-color);
     font-family: "Raleway";
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
 }
 
 .header-link {
@@ -55,6 +97,12 @@ body {
 .header-link:hover,
 .header-link:focus {
     color: var(--blue-color);
+}
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+    gap: 47px;
 }
 
 .contact-link {
@@ -85,6 +133,16 @@ body {
     background: var(--background-color);
 }
 
+.title>.container {
+    padding: 280px 0px 200px;
+}
+.title-text {
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
 .button {
     font-family: inherit;
     font-weight: 700;
@@ -94,12 +152,35 @@ body {
     color: var(--white-color);
     background-color: var(--blue-color);
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    justify-content: center;
 }
 
 .button:hover,
 .button:focus {
     background-color: var(--hover-button);
 }
+
+.benefits>.container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.benefits-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.benefits-item {
+    width: 270px;
+}
+
 .benefits-title {
     font-weight: 700;
     font-size: 14px;
@@ -107,6 +188,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-color);
+    margin-bottom: 10px;
 }
 
 .benefits-text {
@@ -154,6 +236,19 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .footer {
